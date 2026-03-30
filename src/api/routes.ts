@@ -3,8 +3,8 @@
 // ═══════════════════════════════════════════════════════════════
 
 import { Hono } from "hono";
-import { classify, clearCache, cacheStats } from "../classifier/classify.ts";
-import type { ClassifyRequest } from "../types.ts";
+import { classify, clearCache, cacheStats } from "../classifier/classify.js";
+import type { ClassifyRequest } from "../types.js";
 
 const api = new Hono();
 

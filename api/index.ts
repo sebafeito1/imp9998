@@ -5,9 +5,9 @@ import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { handle } from "hono/vercel";
 import Anthropic from "@anthropic-ai/sdk";
-import { buildSystemPrompt, buildUserPrompt } from "../src/classifier/prompt.ts";
-import { calculateConfidence } from "../src/classifier/confidence.ts";
-import { CHAPTERS } from "../src/data/ncm-database.ts";
+import { buildSystemPrompt, buildUserPrompt } from "../src/classifier/prompt.js";
+import { calculateConfidence } from "../src/classifier/confidence.js";
+import { CHAPTERS } from "../src/data/ncm-database.js";
 
 export const config = { runtime: "nodejs" };
 

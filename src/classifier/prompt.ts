@@ -2,7 +2,7 @@
 //  Prompt Builder — Construye el prompt estructurado para Sonnet
 // ═══════════════════════════════════════════════════════════════
 
-import { REGLAS_GENERALES, SECCIONES, CHAPTERS, getSectionForChapter } from "../data/ncm-database.ts";
+import { REGLAS_GENERALES, SECCIONES, CHAPTERS, getSectionForChapter } from "../data/ncm-database.js";
 
 /**
  * Construye el system prompt para el clasificador.

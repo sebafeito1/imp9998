@@ -2,7 +2,7 @@
 //  Tests — Casos de prueba para el clasificador
 // ═══════════════════════════════════════════════════════════════
 
-import { classify, clearCache } from "../src/classifier/classify.ts";
+import { classify, clearCache } from "../src/classifier/classify.js";
 
 interface TestCase {
   name: string;

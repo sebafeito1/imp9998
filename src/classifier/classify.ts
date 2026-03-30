@@ -3,10 +3,10 @@
 // ═══════════════════════════════════════════════════════════════
 
 import Anthropic from "@anthropic-ai/sdk";
-import { buildSystemPrompt, buildUserPrompt } from "./prompt.ts";
-import { calculateConfidence } from "./confidence.ts";
-import { CHAPTERS } from "../data/ncm-database.ts";
-import type { ClassifyRequest, ClassificationResult, TechnicalAttribute, NCMCandidate, ConfidenceScore } from "../types.ts";
+import { buildSystemPrompt, buildUserPrompt } from "./prompt.js";
+import { calculateConfidence } from "./confidence.js";
+import { CHAPTERS } from "../data/ncm-database.js";
+import type { ClassifyRequest, ClassificationResult, TechnicalAttribute, NCMCandidate, ConfidenceScore } from "../types.js";
 
 // Cache en memoria: query normalizada → resultado
 const cache = new Map<string, ClassificationResult>();
